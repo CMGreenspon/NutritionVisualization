@@ -8,11 +8,11 @@ from bokeh.plotting import figure, show, output_file
 from bokeh.layouts import layout, widgetbox, column
 from bokeh.embed import file_html
 from bokeh.resources import CDN
-from bokeh.io import show, output_notebook
+from bokeh.io import show
 from bokeh.models import Text, CDSView, Plot, Circle, CustomJS, CustomJSFilter, HoverTool, ColumnDataSource, Select, CategoricalColorMapper, TextInput
 from bokeh.transform import factor_cmap
    
-#output_file("MacroTriangle.html", title="Macronutrient Proportions")
+output_file("MacroTriangle.html", title="Macronutrient Proportions")
 
 # Prepare Data
 og_data = pd.read_csv("Food Database.csv")
@@ -123,6 +123,5 @@ p.legend.location = "top_right"
 p.legend.border_line_alpha = 0
 
 # Go
-#show(column(food_search, p)) 
+show(column(food_search, p)) 
 #html = file_html(p, CDN, "my plot")
-output_notebook()

@@ -1,6 +1,5 @@
-### Macro Triangle v2
+### 2D Macro Comparison
 ### Charles M. Greenspon - charles.greenspon@gmail.com
-### Thanks to Attilio Caravelli
 # Import Pandas & numpy
 import numpy as np
 import pandas as pd
